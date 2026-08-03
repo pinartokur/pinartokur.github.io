@@ -779,21 +779,21 @@ h2 em {
   color: #fff;
 }
 .work-grid {
-  grid-template-columns: 1.16fr 0.84fr;
+  grid-template-columns: repeat(2, 1fr);
   gap: 18px;
   display: grid;
 }
 .project {
   border-radius: 32px;
-  min-height: 430px;
+  min-height: 360px;
   padding: 28px;
   position: relative;
   overflow: hidden;
   box-shadow: inset 0 1px #ffffff61;
 }
 .project-large {
-  grid-row: span 2;
-  min-height: 878px;
+  grid-row: auto;
+  min-height: 360px;
 }
 .project-purple {
   color: #fff;
@@ -850,9 +850,9 @@ h2 em {
   height: 650px;
   display: flex;
   position: absolute;
-  top: 95px;
+  top: 52px;
   left: 50%;
-  transform: translate(-50%) rotate(-5deg);
+  transform: translate(-50%) rotate(-5deg) scale(0.46);
   box-shadow:
     0 45px 80px #190f2a59,
     inset 0 0 0 1px #40286726;
@@ -978,7 +978,7 @@ h2 em {
 }
 .reels-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   gap: 18px;
 }
 .reel-card {
@@ -1187,18 +1187,18 @@ footer {
   }
   .project-large {
     grid-row: auto;
-    min-height: 720px;
+    min-height: 430px;
   }
   .project {
-    min-height: 540px;
+    min-height: 430px;
   }
   .reels-grid {
     grid-template-columns: repeat(2, 1fr);
   }
   .reel-card:last-child {
-    grid-column: 1 / -1;
-    width: calc(50% - 9px);
-    justify-self: center;
+    grid-column: auto;
+    width: auto;
+    justify-self: stretch;
   }
 }
 @media (width<=640px) {
@@ -1286,11 +1286,11 @@ footer {
   .project,
   .project-large {
     border-radius: 26px;
-    min-height: 560px;
+    min-height: 430px;
   }
   .phone-mockup {
     transform-origin: top;
-    transform: translate(-50%) rotate(-4deg) scale(0.82);
+    transform: translate(-50%) rotate(-4deg) scale(0.48);
   }
   .skills-grid {
     grid-template-columns: 1fr;
