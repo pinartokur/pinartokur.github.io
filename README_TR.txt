@@ -12,5 +12,6 @@ Pakette bulunanlar:
 - pinar-profile.png: Profil fotoğrafı
 - Pinar_Tokur_CV.pdf: İndirilebilir CV
 - favicon.svg: Tarayıcı ikonu
+- videos/: Portfolioya eklenen Reel videoları ve kapak görselleri
 
 İletişim bilgileri veya metinlerde değişiklik yapmak istersen index.html dosyasını düzenleyebilirsin.
